@@ -39,7 +39,7 @@ public class controllerdata {
     model.addAttribute("ttl", lahir);
     model.addAttribute("fto", foto);
     
-    return "card";
+    return "show";
     }
 }
 
