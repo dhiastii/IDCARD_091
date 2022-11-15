@@ -8,34 +8,31 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <title>ID CARD</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+            body {
+            background-color: #D6E4E5;
+            }
+            table {
+                text-align: center;
+            }
+            td {
+            text-align: center;
+            }
+            img {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 5px;
+            width: 150px;
+            }
+            
+        </style>
     </head>
     <body>
     <center><div>Id Card Mahasiswa</div></center>
     <hr />
     <form method="POST" action="/getData" enctype="multipart/form-data">
      <div class="wrapper">
-         
-<!--          <div class="content">
-                  <div class="head">
-                      <p th:text="${nma}">Your Name</p>
-                  </div>
-                  <div class="data">
-                      <p th:text="${ttl}">Following</p>
-                  </div>
-                </div>
-         
-         <div class="container">
-                <div class="img-container">
-                  <img th:src="${fto}" alt="">
-                </div>-->
-
-<!--            </div>
-        </div>-->
-
-<!--    Nama Lengkap : <p th:text="${nma}"></p>
-    Tanggal Lahir : <p th:text="${ttl}"></p>
-    Foto : <img src="fto" alt="alt"/>-->
-
+        
 <table border="1">
             <th>Nama Lengkap</th>
             <th>Tanggal Lahir</th>
@@ -44,7 +41,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
             <tr>
             <td th:text="${nma}"></td>
             <td th:text="${ttl}"></td>
-            <td <img src="${fto}" alt="alt"></td>
+            <td> <img src="${fto}"></td>
             </tr>
         </table>
     </body>
