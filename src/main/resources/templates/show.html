@@ -10,39 +10,16 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <style>
             body {
-            background-color: #D6E4E5;
-            }
-            table {
-                text-align: center;
-            }
-            td {
-            text-align: center;
-            }
-            img {
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            padding: 5px;
-            width: 150px;
-            }
-            
+                background-color: #F7A4A4;
+            }          
         </style>
     </head>
     <body>
     <center><div>Id Card Mahasiswa</div></center>
     <hr />
-    <form method="POST" action="/getData" enctype="multipart/form-data">
-     <div class="wrapper">
-        
-<table border="1">
-            <th>Nama Lengkap</th>
-            <th>Tanggal Lahir</th>
-            <th>Foto</th>
-            
-            <tr>
-            <td th:text="${nma}"></td>
-            <td th:text="${ttl}"></td>
-            <td> <img src="${fto}"></td>
-            </tr>
-        </table>
+    <!--<center><form method="POST" action="/getData" enctype="multipart/form-data"></center>-->
+    Nama Lengkap : <a th:text="${nma}"></a> <br><br>
+    Tanggal Lahir : <a th:text="${ttl}"></a> <br><br>
+    Foto : <img th:src="${fto}"/>
     </body>
 </html>
