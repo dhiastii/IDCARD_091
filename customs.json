@@ -3,6 +3,12 @@
     "attributes": {
         "th:text": {
             "context": "p"
+        },
+        "img": {
+            "context": "td"
+        },
+        "th:src": {
+            "context": "img"
         }
     }
 }

@@ -37,7 +37,7 @@ public class controllerdata {
     
     model.addAttribute("nma", nama);
     model.addAttribute("ttl", lahir);
-    model.addAttribute("fto", foto);
+    model.addAttribute("fto", fotoo);
     
     return "show";
     }
