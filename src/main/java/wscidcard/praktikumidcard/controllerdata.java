@@ -22,7 +22,7 @@ import org.springframework.web.multipart.MultipartFile;
  */
 @Controller
 public class controllerdata {
-    @ResponseBody
+//    @ResponseBody
     @RequestMapping("/getData")
     public String getData(@RequestParam("nama") String nama,
                           @RequestParam("foto") MultipartFile foto,
